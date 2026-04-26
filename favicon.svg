@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Background gradient (no rounded corners — iOS adds them) -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fce7f3"/>
+      <stop offset="50%" stop-color="#fbcfe8"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef9c3"/>
+      <stop offset="60%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </radialGradient>
+    <linearGradient id="mane" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- Sun in top-right -->
+  <circle cx="850" cy="200" r="120" fill="url(#sun)" opacity="0.85"/>
+
+  <!-- Sparkles scattered -->
+  <g fill="#fbbf24" opacity="0.7">
+    <path d="M 180 220 L 195 250 L 225 240 L 200 268 L 215 300 L 185 282 L 160 298 L 175 268 L 145 250 L 175 248 Z"/>
+    <path d="M 170 750 L 178 766 L 194 762 L 182 776 L 188 792 L 174 784 L 162 794 L 168 778 L 154 766 L 168 766 Z" transform="scale(0.7) translate(70 320)"/>
+    <path d="M 880 700 L 888 716 L 904 712 L 892 726 L 898 742 L 884 734 L 872 744 L 878 728 L 864 716 L 878 716 Z" transform="scale(0.8) translate(170 175)"/>
+  </g>
+
+  <!-- Strawberry (bottom-left) -->
+  <g transform="translate(180 760) rotate(-15)">
+    <path d="M 0 0 Q -60 -10 -50 50 Q 0 100 50 50 Q 60 -10 0 0 Z" fill="#dc2626"/>
+    <path d="M -40 -5 Q -25 -25 0 -20 Q 25 -25 40 -5 Q 30 5 0 0 Q -30 5 -40 -5 Z" fill="#16a34a"/>
+    <circle cx="-15" cy="20" r="3" fill="#fde047"/>
+    <circle cx="10" cy="35" r="3" fill="#fde047"/>
+    <circle cx="-25" cy="50" r="3" fill="#fde047"/>
+    <circle cx="20" cy="60" r="3" fill="#fde047"/>
+    <circle cx="-5" cy="65" r="3" fill="#fde047"/>
+  </g>
+
+  <!-- Strawberry (bottom-right) -->
+  <g transform="translate(840 800) rotate(20)">
+    <path d="M 0 0 Q -50 -10 -42 42 Q 0 84 42 42 Q 50 -10 0 0 Z" fill="#dc2626"/>
+    <path d="M -34 -5 Q -20 -22 0 -18 Q 20 -22 34 -5 Q 25 4 0 0 Q -25 4 -34 -5 Z" fill="#16a34a"/>
+    <circle cx="-12" cy="18" r="2.5" fill="#fde047"/>
+    <circle cx="10" cy="30" r="2.5" fill="#fde047"/>
+    <circle cx="-20" cy="42" r="2.5" fill="#fde047"/>
+  </g>
+
+  <!-- LILI - centered horse portrait -->
+  <g transform="translate(512 530)">
+    <!-- Body shadow -->
+    <ellipse cx="0" cy="220" rx="220" ry="22" fill="#000" opacity="0.12"/>
+
+    <!-- Tail with flowing mane curl -->
+    <path d="M -180 60 Q -260 0 -240 -80 Q -220 -100 -200 -60" fill="url(#mane)" stroke="#7e22ce" stroke-width="6" stroke-linejoin="round"/>
+
+    <!-- Body (pink) -->
+    <ellipse cx="0" cy="80" rx="180" ry="120" fill="#fbcfe8"/>
+    <ellipse cx="0" cy="60" rx="160" ry="95" fill="#fce7f3" opacity="0.7"/>
+
+    <!-- Legs -->
+    <rect x="-110" y="160" width="40" height="80" rx="12" fill="#fbcfe8"/>
+    <rect x="70" y="160" width="40" height="80" rx="12" fill="#fbcfe8"/>
+    <rect x="-110" y="225" width="40" height="20" rx="6" fill="#581c87"/>
+    <rect x="70" y="225" width="40" height="20" rx="6" fill="#581c87"/>
+
+    <!-- Neck -->
+    <path d="M 90 0 Q 130 -60 200 -100 L 240 -60 Q 180 0 130 30 Z" fill="#fbcfe8"/>
+
+    <!-- Head -->
+    <ellipse cx="220" cy="-110" rx="90" ry="80" fill="#fbcfe8"/>
+    <!-- Snout -->
+    <ellipse cx="280" cy="-90" rx="40" ry="30" fill="#f9a8d4" opacity="0.6"/>
+
+    <!-- MANE — the iconic flowing purple element -->
+    <path d="M 130 -180 Q 100 -220 140 -240 Q 180 -250 200 -210 Q 220 -260 250 -240 Q 280 -260 280 -210 Q 290 -180 260 -160 Q 240 -150 220 -160 Q 200 -150 180 -160 Q 160 -150 145 -160 Q 130 -160 130 -180 Z" fill="url(#mane)"/>
+    <!-- Mane forelock -->
+    <path d="M 200 -160 Q 195 -130 215 -120 Q 235 -130 230 -160 Z" fill="#7e22ce"/>
+
+    <!-- Ear -->
+    <path d="M 260 -180 L 285 -210 L 295 -170 Z" fill="#fbcfe8"/>
+    <path d="M 268 -180 L 282 -200 L 287 -178 Z" fill="#f472b6"/>
+
+    <!-- Eye - big and friendly -->
+    <ellipse cx="225" cy="-100" rx="14" ry="20" fill="#1e293b"/>
+    <ellipse cx="220" cy="-105" rx="6" ry="10" fill="white"/>
+    <circle cx="222" cy="-103" r="2.5" fill="white"/>
+
+    <!-- Eyelashes -->
+    <path d="M 215 -118 L 213 -125" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 220 -120 L 220 -128" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 226 -120 L 228 -128" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Nostril -->
+    <ellipse cx="288" cy="-92" rx="3" ry="5" fill="#9d174d"/>
+
+    <!-- Smile -->
+    <path d="M 268 -75 Q 280 -65 292 -75" stroke="#9d174d" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Cheek blush -->
+    <circle cx="195" cy="-85" r="12" fill="#f472b6" opacity="0.45"/>
+  </g>
+
+  <!-- Soft "Lili" wordmark at bottom -->
+  <text x="512" y="950" font-family="Fredoka, system-ui, -apple-system, sans-serif" font-weight="700" font-size="120" fill="#9d174d" text-anchor="middle" letter-spacing="-3">Lili</text>
+</svg>

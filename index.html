@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#fce7f3" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Lili" />
+    <meta name="description" content="A gentle counting and sharing game for ages 3-5. Lili the pony picks fruits with her friends and learns simple math along the way." />
+    <meta property="og:title" content="Lili — Count, Share, Smile" />
+    <meta property="og:description" content="A talking, bilingual counting game for kids ages 3-5." />
+    <meta property="og:type" content="website" />
+    <title>Lili — Count, Share, Smile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      html, body, #root {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background: #fce7f3;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+        font-family: 'Fredoka', system-ui, -apple-system, sans-serif;
+        overscroll-behavior: none;
+      }
+      * { box-sizing: border-box; }
+      /* Prevent pull-to-refresh and bounce on iOS */
+      html { position: fixed; overflow: hidden; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
